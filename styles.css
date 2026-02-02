@@ -45,20 +45,10 @@ body {
   font-weight: bold;
 }
 
-.nav {
-  display: flex;
-  gap: 18px;
-}
-
 .nav a {
   color: white;
   text-decoration: none;
-}
-
-.btn-nav {
-  border: 1px solid white;
-  padding: 6px 12px;
-  border-radius: 4px;
+  margin-left: 16px;
 }
 
 /* HERO */
@@ -69,13 +59,13 @@ body {
 
 .hero-content {
   display: flex;
-  gap: 40px;
   align-items: center;
+  gap: 40px;
 }
 
 .hero-text h2 {
   font-size: 2.4rem;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .hero-image img {
@@ -93,7 +83,7 @@ body {
 
 .section h3 {
   font-size: 1.8rem;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   border-left: 4px solid #0e2a47;
   padding-left: 10px;
 }
@@ -103,11 +93,11 @@ body {
   color: #555;
 }
 
-/* CONDITIONS GRID */
+/* CONDITIONS */
 .conditions-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 24px;
+  gap: 22px;
 }
 
 .condition-card {
@@ -117,38 +107,14 @@ body {
   height: 140px;
   width: 140px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-decoration: none;
-  color: #0e2a47;
+  justify-content: center;
   font-weight: 600;
+  color: #0e2a47;
   margin: auto;
-  transition: 0.2s ease;
 }
 
-.condition-card:hover {
-  background: #0e2a47;
-  color: white;
-}
-
-.condition-icon {
-  font-size: 2rem;
-  margin-bottom: 6px;
-}
-
-/* DEFINITIONS */
-.definitions {
-  display: grid;
-  gap: 28px;
-}
-
-.definition h4 {
-  font-size: 1.4rem;
-  margin-bottom: 6px;
-}
-
-/* CARDS */
+/* PROGRAM CARDS */
 .cards {
   display: grid;
   gap: 18px;
@@ -160,9 +126,30 @@ body {
 
 .card {
   background: white;
+  padding: 20px;
   border-radius: 10px;
-  padding: 18px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* CALENDAR */
+.event-list {
+  display: grid;
+  gap: 16px;
+}
+
+.event-item {
+  display: flex;
+  gap: 20px;
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.event-date {
+  font-weight: bold;
+  color: #0e2a47;
+  min-width: 80px;
 }
 
 /* FOOTER */
