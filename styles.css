@@ -45,19 +45,15 @@ body {
   font-weight: bold;
 }
 
-.nav {
-  display: flex;
-  gap: 18px;
-}
-
 .nav a {
   color: white;
   text-decoration: none;
+  margin-left: 16px;
 }
 
 .btn-nav {
   border: 1px solid white;
-  padding: 6px 12px;
+  padding: 6px 10px;
   border-radius: 4px;
 }
 
@@ -75,7 +71,7 @@ body {
 
 .hero-text h2 {
   font-size: 2.4rem;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .hero-image img {
@@ -93,7 +89,7 @@ body {
 
 .section h3 {
   font-size: 1.8rem;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   border-left: 4px solid #0e2a47;
   padding-left: 10px;
 }
@@ -101,51 +97,6 @@ body {
 .section-subtext {
   margin-bottom: 25px;
   color: #555;
-}
-
-/* CONDITIONS GRID */
-.conditions-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 24px;
-}
-
-.condition-card {
-  background: white;
-  border: 2px solid #0e2a47;
-  border-radius: 50%;
-  height: 140px;
-  width: 140px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: #0e2a47;
-  font-weight: 600;
-  margin: auto;
-  transition: 0.2s ease;
-}
-
-.condition-card:hover {
-  background: #0e2a47;
-  color: white;
-}
-
-.condition-icon {
-  font-size: 2rem;
-  margin-bottom: 6px;
-}
-
-/* DEFINITIONS */
-.definitions {
-  display: grid;
-  gap: 28px;
-}
-
-.definition h4 {
-  font-size: 1.4rem;
-  margin-bottom: 6px;
 }
 
 /* CARDS */
@@ -160,9 +111,69 @@ body {
 
 .card {
   background: white;
+  padding: 20px;
   border-radius: 10px;
-  padding: 18px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* TEAM */
+.team-card {
+  text-align: center;
+}
+
+.team-card .role {
+  font-weight: 600;
+  color: #0e2a47;
+}
+
+/* CALENDAR */
+.calendar {
+  margin-top: 25px;
+}
+
+.calendar-header {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.calendar-label {
+  text-align: center;
+  font-weight: 600;
+}
+
+.calendar-day {
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 10px;
+  min-height: 90px;
+  font-size: 0.85rem;
+}
+
+.calendar-day.empty {
+  background: transparent;
+}
+
+.calendar-day.event {
+  background: #e3ebf6;
+  border: 2px solid #0e2a47;
+}
+
+.calendar-day .date {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.event-text {
+  font-size: 0.75rem;
+  color: #0e2a47;
 }
 
 /* FOOTER */
