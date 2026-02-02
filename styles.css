@@ -8,6 +8,7 @@ body {
   font-family: "Segoe UI", sans-serif;
   background: #f9f9fb;
   color: #222;
+  line-height: 1.6;
 }
 
 .container {
@@ -63,6 +64,18 @@ body {
   align-items: center;
 }
 
+.hero-text h2 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+/* ✅ FIXED IMAGE SIZE */
+.hero-image img {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+}
+
 /* SECTIONS */
 .section {
   padding: 55px 0;
@@ -113,9 +126,8 @@ body {
   height: 140px;
   width: 140px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: #0e2a47;
   font-weight: 600;
@@ -127,6 +139,11 @@ body {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 8px;
+}
+
+.calendar-label {
+  text-align: center;
+  font-weight: bold;
 }
 
 .calendar-day {
@@ -141,9 +158,13 @@ body {
   border: 2px solid #0e2a47;
 }
 
-.calendar-label {
-  text-align: center;
+.date {
   font-weight: bold;
+}
+
+.event-text {
+  font-size: 0.75rem;
+  color: #0e2a47;
 }
 
 /* TEAM */
@@ -162,4 +183,12 @@ body {
   color: white;
   text-align: center;
   padding: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
 }
