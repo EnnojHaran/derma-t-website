@@ -5,10 +5,9 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", sans-serif;
   background: #f9f9fb;
   color: #222;
-  line-height: 1.6;
 }
 
 .container {
@@ -32,23 +31,18 @@ body {
 
 .logo {
   display: flex;
-  align-items: center;
   gap: 10px;
+  align-items: center;
 }
 
 .logo img {
   height: 40px;
 }
 
-.logo span {
-  font-size: 1.6rem;
-  font-weight: bold;
-}
-
 .nav a {
   color: white;
-  text-decoration: none;
   margin-left: 16px;
+  text-decoration: none;
 }
 
 .btn-nav {
@@ -69,15 +63,6 @@ body {
   align-items: center;
 }
 
-.hero-text h2 {
-  font-size: 2.4rem;
-  margin-bottom: 10px;
-}
-
-.hero-image img {
-  max-height: 170px;
-}
-
 /* SECTIONS */
 .section {
   padding: 55px 0;
@@ -88,10 +73,9 @@ body {
 }
 
 .section h3 {
-  font-size: 1.8rem;
-  margin-bottom: 12px;
   border-left: 4px solid #0e2a47;
   padding-left: 10px;
+  margin-bottom: 12px;
 }
 
 .section-subtext {
@@ -113,7 +97,53 @@ body {
   background: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* CONDITIONS */
+.conditions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 22px;
+}
+
+.condition-card {
+  background: white;
+  border: 2px solid #0e2a47;
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #0e2a47;
+  font-weight: 600;
+  margin: auto;
+}
+
+/* CALENDAR */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.calendar-day {
+  background: #f3f4f6;
+  padding: 10px;
+  border-radius: 8px;
+  min-height: 90px;
+}
+
+.calendar-day.event {
+  background: #e3ebf6;
+  border: 2px solid #0e2a47;
+}
+
+.calendar-label {
+  text-align: center;
+  font-weight: bold;
 }
 
 /* TEAM */
@@ -122,58 +152,8 @@ body {
 }
 
 .team-card .role {
-  font-weight: 600;
   color: #0e2a47;
-}
-
-/* CALENDAR */
-.calendar {
-  margin-top: 25px;
-}
-
-.calendar-header {
-  font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 12px;
-}
-
-.calendar-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 8px;
-}
-
-.calendar-label {
-  text-align: center;
-  font-weight: 600;
-}
-
-.calendar-day {
-  background: #f3f4f6;
-  border-radius: 8px;
-  padding: 10px;
-  min-height: 90px;
-  font-size: 0.85rem;
-}
-
-.calendar-day.empty {
-  background: transparent;
-}
-
-.calendar-day.event {
-  background: #e3ebf6;
-  border: 2px solid #0e2a47;
-}
-
-.calendar-day .date {
-  font-weight: bold;
-  display: block;
-  margin-bottom: 6px;
-}
-
-.event-text {
-  font-size: 0.75rem;
-  color: #0e2a47;
 }
 
 /* FOOTER */
@@ -181,13 +161,5 @@ body {
   background: #0e2a47;
   color: white;
   text-align: center;
-  padding: 14px 0;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
-  }
+  padding: 14px;
 }
