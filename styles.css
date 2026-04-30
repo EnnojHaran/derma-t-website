@@ -5,9 +5,9 @@
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-  background: #ffffff;
-  color: #1a2b3f;
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: #f7fbfb;
+  color: #174646;
   line-height: 1.5;
 }
 
@@ -17,12 +17,13 @@ body {
   padding: 0 32px;
 }
 
-/* === topbar / header — DermNet dark blue authority === */
+/* === topbar / header — Derma-T teal theme === */
 .topbar {
-  background: #002b4a;  /* deep navy like dermnet */
-  color: white;
-  padding: 12px 0;
-  border-bottom: 4px solid #4b9cd3;
+  background: #ffffff;
+  color: #174646;
+  padding: 14px 0;
+  border-bottom: 4px solid #008b8b;
+  box-shadow: 0 4px 18px rgba(0, 139, 139, 0.08);
 }
 
 .topbar-inner {
@@ -40,12 +41,14 @@ body {
 
 .logo i {
   font-size: 2.2rem;
-  color: #9fd0f0;
+  color: #008b8b;
 }
 
 .logo span {
-  font-size: 1.9rem;
-  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #008b8b;
   letter-spacing: -0.5px;
 }
 
@@ -57,36 +60,37 @@ body {
 }
 
 .nav a {
-  color: #f0f7ff;
+  color: #174646;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   transition: 0.2s;
   border-bottom: 2px solid transparent;
   padding-bottom: 4px;
 }
 
 .nav a:hover {
-  border-bottom-color: #7fc2f0;
-  color: white;
+  border-bottom-color: #008b8b;
+  color: #008b8b;
 }
 
 .btn-nav {
-  background: #1e6a9f;
+  background: #008b8b;
+  color: white !important;
   padding: 8px 18px;
   border-radius: 40px;
   font-weight: 600;
-  border: 1px solid #8fc9ff;
+  border: 1px solid #75aaa6;
 }
 
 .btn-nav:hover {
-  background: #2b7ec0;
+  background: #006f6f;
 }
 
-/* === hero / pro student banner – like dermnet student centre === */
+/* === hero banner — matches Derma-T poster style === */
 .hero-student {
-  background: linear-gradient(105deg, #e4f0fa 0%, #cde4f5 100%);
-  padding: 48px 0;
-  border-bottom: 1px solid #bdd8ec;
+  background: linear-gradient(105deg, #ffffff 0%, #e3f5f4 100%);
+  padding: 56px 0;
+  border-bottom: 1px solid #cde8e6;
 }
 
 .hero-grid {
@@ -97,30 +101,31 @@ body {
 }
 
 .hero-badge {
-  background: #002b4a;
+  background: #008b8b;
   color: white;
   padding: 6px 16px;
   border-radius: 40px;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 700;
   display: inline-block;
   margin-bottom: 20px;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
 }
 
 .hero-text h2 {
-  font-size: 2.8rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
   font-weight: 700;
-  line-height: 1.2;
-  color: #002b4a;
+  line-height: 1.1;
+  color: #008b8b;
   margin-bottom: 16px;
 }
 
 .hero-text .student-tagline {
-  font-size: 1.4rem;
-  color: #1f5379;
+  font-size: 1.25rem;
+  color: #2d5d5d;
   margin-bottom: 24px;
-  border-left: 5px solid #4b9cd3;
+  border-left: 5px solid #75aaa6;
   padding-left: 24px;
 }
 
@@ -139,32 +144,32 @@ body {
   border-radius: 40px;
   font-weight: 600;
   text-decoration: none;
-  color: #002b4a;
-  border: 1px solid #b0cde0;
+  color: #008b8b;
+  border: 1px solid #75aaa6;
   transition: all 0.2s;
-  box-shadow: 0 2px 8px rgba(0,43,74,0.08);
+  box-shadow: 0 2px 8px rgba(0,139,139,0.08);
   cursor: pointer;
 }
 
 .btn-primary {
-  background: #002b4a;
+  background: #008b8b;
   color: white;
   border: none;
-  box-shadow: 0 8px 18px rgba(0,43,74,0.2);
+  box-shadow: 0 8px 18px rgba(0,139,139,0.22);
 }
 
 .btn-primary i {
-  color: #9fd0f0;
+  color: #e3f5f4;
 }
 
 .btn:hover {
   transform: translateY(-3px);
-  background: #f0f7ff;
-  border-color: #1e6a9f;
+  background: #e3f5f4;
+  border-color: #008b8b;
 }
 
 .btn-primary:hover {
-  background: #0e3e62;
+  background: #006f6f;
 }
 
 .hero-image {
@@ -174,15 +179,15 @@ body {
 
 .hero-image i {
   font-size: 9rem;
-  color: #1f5379;
-  opacity: 0.7;
+  color: #75aaa6;
+  opacity: 0.8;
 }
 
-/* editorial process row – like dermnet values */
+/* values row */
 .editorial-row {
-  background: #f2f8ff;
+  background: #f0fbfa;
   padding: 26px 0;
-  border-bottom: 2px solid #bdd8ec;
+  border-bottom: 2px solid #cde8e6;
 }
 
 .values-grid {
@@ -200,11 +205,11 @@ body {
   background: white;
   padding: 8px 22px;
   border-radius: 40px;
-  box-shadow: 0 2px 10px rgba(0,43,74,0.05);
+  box-shadow: 0 2px 10px rgba(0,139,139,0.06);
 }
 
 .value-item i {
-  color: #1e6a9f;
+  color: #008b8b;
   font-size: 1.3rem;
 }
 
@@ -218,13 +223,14 @@ body {
 }
 
 .section-muted {
-  background: #f8fafd;
+  background: #f4f9f9;
 }
 
 .section h3 {
-  font-size: 2.2rem;
-  font-weight: 650;
-  color: #002b4a;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #008b8b;
   margin-bottom: 24px;
   display: flex;
   align-items: center;
@@ -232,18 +238,18 @@ body {
 }
 
 .section h3 i {
-  color: #4b9cd3;
+  color: #75aaa6;
   font-size: 2rem;
 }
 
 .section-subhead {
-  font-size: 1.2rem;
-  color: #2c577b;
+  font-size: 1.15rem;
+  color: #2d5d5d;
   margin-bottom: 36px;
   max-width: 800px;
 }
 
-/* condition cards – interactive grid */
+/* condition cards */
 .conditions-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -253,7 +259,7 @@ body {
 
 .condition-btn {
   background: white;
-  border: 2px solid #dbeaf3;
+  border: 2px solid #cde8e6;
   border-radius: 40px;
   padding: 16px 8px;
   display: flex;
@@ -261,23 +267,23 @@ body {
   align-items: center;
   gap: 10px;
   font-weight: 600;
-  color: #002b4a;
+  color: #174646;
   transition: 0.2s;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+  box-shadow: 0 4px 10px rgba(0,139,139,0.04);
   width: 100%;
   font-size: 1rem;
 }
 
 .condition-btn i {
   font-size: 2.2rem;
-  color: #1e6a9f;
+  color: #008b8b;
 }
 
 .condition-btn:hover {
-  background: #002b4a;
+  background: #008b8b;
   color: white;
-  border-color: #002b4a;
+  border-color: #008b8b;
   transform: scale(1.02);
 }
 
@@ -286,36 +292,38 @@ body {
 }
 
 .condition-btn.active {
-  background: #002b4a;
+  background: #008b8b;
   color: white;
-  border-color: #002b4a;
+  border-color: #008b8b;
 }
+
 .condition-btn.active i {
-  color: #9fd0f0;
+  color: #e3f5f4;
 }
 
 /* dynamic definition card */
 .definition-card {
-  background: #eaf3fb;
-  border-left: 10px solid #1e6a9f;
+  background: #e3f5f4;
+  border-left: 10px solid #008b8b;
   padding: 32px 36px;
   border-radius: 40px;
   margin: 24px 0 32px;
-  box-shadow: 0 12px 24px -8px rgba(0,43,74,0.15);
+  box-shadow: 0 12px 24px -8px rgba(0,139,139,0.18);
 }
 
 .definition-card h4 {
+  font-family: 'Playfair Display', serif;
   font-size: 2rem;
-  color: #002b4a;
+  color: #008b8b;
   margin-bottom: 16px;
 }
 
 .definition-card p {
-  font-size: 1.2rem;
-  color: #11324d;
+  font-size: 1.15rem;
+  color: #174646;
 }
 
-/* cards grid (programs/team) */
+/* cards grid */
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -327,8 +335,8 @@ body {
   background: white;
   border-radius: 24px;
   padding: 26px 20px;
-  box-shadow: 0 12px 28px -8px rgba(0,43,74,0.1);
-  border: 1px solid #e2edf6;
+  box-shadow: 0 12px 28px -8px rgba(0,139,139,0.12);
+  border: 1px solid #d8eeee;
   transition: 0.15s;
 }
 
@@ -338,25 +346,26 @@ body {
 
 .card i {
   font-size: 2.2rem;
-  color: #1e6a9f;
+  color: #008b8b;
   margin-bottom: 18px;
 }
 
 .card h4 {
+  font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   margin-bottom: 12px;
-  color: #002b4a;
+  color: #008b8b;
 }
 
 .exec-badge {
   display: inline-block;
-  background: #cbe0f2;
+  background: #d9f0ef;
   border-radius: 40px;
   padding: 6px 18px;
   font-size: 0.85rem;
   font-weight: 600;
   margin-top: 16px;
-  color: #002b4a;
+  color: #174646;
 }
 
 /* calendar / events list */
@@ -371,11 +380,11 @@ body {
   align-items: center;
   gap: 24px;
   padding: 18px 0;
-  border-bottom: 1px dashed #b0cde0;
+  border-bottom: 1px dashed #75aaa6;
 }
 
 .event-date {
-  background: #002b4a;
+  background: #008b8b;
   color: white;
   min-width: 90px;
   text-align: center;
@@ -391,7 +400,8 @@ body {
 
 .btn-small {
   background: none;
-  border: 2px solid #002b4a;
+  border: 2px solid #008b8b;
+  color: #008b8b;
   border-radius: 40px;
   padding: 8px 20px;
   font-weight: 600;
@@ -399,13 +409,13 @@ body {
 }
 
 .btn-small:hover {
-  background: #002b4a;
+  background: #008b8b;
   color: white;
 }
 
 /* footer */
 .footer {
-  background: #002b4a;
+  background: #174646;
   color: white;
   padding: 40px 0 24px;
 }
@@ -418,10 +428,10 @@ body {
 }
 
 .footer .social-links a:hover {
-  color: #9fd0f0;
+  color: #75aaa6;
 }
 
-/* interview list (embedded) */
+/* interview list */
 .interview-list {
   display: flex;
   flex-wrap: wrap;
@@ -430,13 +440,21 @@ body {
 }
 
 .pill {
-  background: #dbeaf3;
+  background: #d9f0ef;
+  color: #174646;
   padding: 6px 18px;
   border-radius: 40px;
   font-size: 0.95rem;
 }
 
 @media (max-width: 700px) {
-  .hero-grid { flex-direction: column; text-align: center; }
-  .hero-text .student-tagline { border-left: none; padding-left: 0; }
+  .hero-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text .student-tagline {
+    border-left: none;
+    padding-left: 0;
+  }
 }
