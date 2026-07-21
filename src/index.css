@@ -117,25 +117,16 @@ body {
 .bot {
   position: absolute;
   color: var(--teal-mid);
-  opacity: 0.28;
-  filter: drop-shadow(0 4px 8px rgba(18, 85, 79, 0.15));
+  opacity: 0.3;
+  filter: drop-shadow(0 4px 8px rgba(18, 85, 79, 0.14));
   animation: floatBot 7s ease-in-out infinite;
+  will-change: transform;
 }
-
-.bot-tl { top: -14px;  left: -10px;  width: 130px; transform: rotate(-8deg); }
-.bot-tr { top: -8px;   right: -6px;  width: 150px; transform: rotate(12deg); color: var(--teal-bright); animation-delay: 0.8s; }
-.bot-bl { bottom: -18px; left: -8px; width: 120px; transform: rotate(6deg); animation-delay: 1.6s; }
-.bot-br { bottom: -14px; right: -12px; width: 140px; transform: rotate(-10deg); color: var(--teal-light); animation-delay: 2.4s; }
 
 @keyframes floatBot {
   0%, 100% { transform: translateY(0) rotate(var(--r, 0deg)); }
-  50%      { transform: translateY(-12px) rotate(var(--r, 0deg)); }
+  50%      { transform: translateY(-14px) rotate(var(--r, 0deg)); }
 }
-
-.bot-tl { --r: -8deg; }
-.bot-tr { --r: 12deg; }
-.bot-bl { --r: 6deg; }
-.bot-br { --r: -10deg; }
 
 /* === NAVIGATION BAR (glassy) === */
 .topbar {
@@ -176,15 +167,17 @@ body {
 
 /* Bright glowing logo badge */
 .logo-img {
-  height: 52px;
-  width: 52px;
+  height: 56px;
+  width: 56px;
   object-fit: contain;
   border-radius: 50%;
-  padding: 5px;
-  background: radial-gradient(circle, #ffffff 60%, #e4f7f3 100%);
+  padding: 3px;
+  background: radial-gradient(circle, #ffffff 64%, #e4f7f3 100%);
+  filter: saturate(1.45) contrast(1.12);
   box-shadow:
-    0 0 0 3px rgba(255, 255, 255, 0.9),
-    0 0 14px rgba(47, 168, 155, 0.55),
+    0 0 0 3px rgba(255, 255, 255, 0.95),
+    0 0 0 6px rgba(125, 211, 204, 0.35),
+    0 0 16px rgba(47, 168, 155, 0.6),
     var(--shadow-sm);
   animation: logoPulse 4s ease-in-out infinite;
   transition: all 0.3s ease;
@@ -193,21 +186,24 @@ body {
 .logo:hover .logo-img {
   box-shadow:
     0 0 0 3px #ffffff,
-    0 0 22px rgba(47, 168, 155, 0.85),
+    0 0 0 7px rgba(125, 211, 204, 0.5),
+    0 0 24px rgba(47, 168, 155, 0.9),
     var(--shadow-md);
 }
 
 @keyframes logoPulse {
   0%, 100% {
     box-shadow:
-      0 0 0 3px rgba(255, 255, 255, 0.9),
+      0 0 0 3px rgba(255, 255, 255, 0.95),
+      0 0 0 6px rgba(125, 211, 204, 0.3),
       0 0 12px rgba(47, 168, 155, 0.45),
       var(--shadow-sm);
   }
   50% {
     box-shadow:
-      0 0 0 3px rgba(255, 255, 255, 0.95),
-      0 0 26px rgba(47, 168, 155, 0.8),
+      0 0 0 3px #ffffff,
+      0 0 0 8px rgba(125, 211, 204, 0.48),
+      0 0 26px rgba(47, 168, 155, 0.82),
       var(--shadow-md);
   }
 }
@@ -314,13 +310,14 @@ body {
 }
 
 .hero-eyebrow {
-  display: inline-block;
+  display: block;
+  width: fit-content;
   font-family: var(--font-script);
   font-size: 1.9rem;
   font-weight: 700;
   color: var(--teal-mid);
   transform: rotate(-3deg);
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   animation: slideInLeft 0.7s ease-out;
 }
 
@@ -450,10 +447,11 @@ body {
 }
 
 .hero-logo {
-  width: 62%;
+  width: 66%;
   height: auto;
   object-fit: contain;
-  filter: drop-shadow(0 8px 18px rgba(18, 85, 79, 0.18));
+  filter: saturate(1.45) contrast(1.12)
+    drop-shadow(0 8px 18px rgba(18, 85, 79, 0.2));
   animation: floatLogo 6s ease-in-out infinite;
 }
 
@@ -1317,23 +1315,26 @@ body {
 }
 
 .footer-logo-img {
-  height: 84px;
-  width: 84px;
+  height: 66px;
+  width: 66px;
   object-fit: contain;
   border-radius: 50%;
-  padding: 8px;
-  background: radial-gradient(circle, #ffffff 60%, #e4f7f3 100%);
+  padding: 4px;
+  background: radial-gradient(circle, #ffffff 64%, #e4f7f3 100%);
+  filter: saturate(1.45) contrast(1.12);
   box-shadow:
-    0 0 0 3px rgba(255, 255, 255, 0.9),
-    0 0 18px rgba(47, 168, 155, 0.5);
+    0 0 0 3px rgba(255, 255, 255, 0.95),
+    0 0 0 7px rgba(125, 211, 204, 0.4),
+    0 0 18px rgba(47, 168, 155, 0.55);
   transition: all 0.3s ease;
 }
 
 .footer-logo:hover .footer-logo-img {
   transform: scale(1.08);
   box-shadow:
-    0 0 0 3px #ffffff,
-    0 0 26px rgba(47, 168, 155, 0.8);
+    0 0 0 4px #ffffff,
+    0 0 0 11px rgba(125, 211, 204, 0.55),
+    0 0 32px rgba(47, 168, 155, 0.85);
 }
 
 .footer-branding h3 {
@@ -1427,12 +1428,10 @@ body {
   .fact-card { min-height: 180px; padding: 26px; }
 
   .footer-logo { flex-direction: column; text-align: center; gap: 16px; }
-  .footer-logo-img { height: 66px; width: 66px; }
+  .footer-logo-img { height: 58px; width: 58px; }
   .footer-branding h3 { font-size: 1.7rem; }
 
-  .bot { opacity: 0.2; }
-  .bot-tl, .bot-bl { width: 90px; }
-  .bot-tr, .bot-br { width: 100px; }
+  .botanicals { opacity: 0.6; }
 }
 
 @media (max-width: 480px) {

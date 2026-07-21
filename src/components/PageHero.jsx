@@ -4,7 +4,7 @@ import DisplayHeading from './DisplayHeading'
 export default function PageHero({ accent, title, subtitle }) {
   return (
     <section className="page-hero">
-      <Botanicals />
+      <Botanicals variant="banner" />
       <div className="container">
         <DisplayHeading accent={accent} title={title} />
         <p>{subtitle}</p>
