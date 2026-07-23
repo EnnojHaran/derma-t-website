@@ -6,7 +6,6 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Activities from './pages/Activities'
 import Team from './pages/Team'
-import Facts from './pages/Facts'
 import Contact from './pages/Contact'
 
 export default function App() {
@@ -20,7 +19,6 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/activities" element={<Activities />} />
           <Route path="/team" element={<Team />} />
-          <Route path="/facts" element={<Facts />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
