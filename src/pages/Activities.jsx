@@ -1,4 +1,5 @@
 import PageHero from '../components/PageHero'
+import { icons } from '../components/Icons'
 import { activities } from '../data/content'
 
 export default function Activities() {
@@ -12,14 +13,24 @@ export default function Activities() {
 
       <section className="content-section">
         <div className="container">
-          <div className="activities-grid">
-            {activities.map((a) => (
-              <div className="activity-card" key={a.title}>
-                <div className="activity-icon">{a.icon}</div>
-                <h3>{a.title}</h3>
-                <p>{a.text}</p>
-              </div>
-            ))}
+          <div className="activity-list">
+            {activities.map((a, i) => {
+              const Icon = icons[a.icon]
+              return (
+                <div
+                  className={`activity-row${i % 2 ? ' reverse' : ''}`}
+                  key={a.title}
+                >
+                  <div className="activity-row-icon">
+                    <Icon />
+                  </div>
+                  <div className="activity-row-body">
+                    <h3>{a.title}</h3>
+                    <p>{a.text}</p>
+                  </div>
+                </div>
+              )
+            })}
           </div>
         </div>
       </section>

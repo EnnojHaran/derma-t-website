@@ -15,13 +15,13 @@ export default function Team() {
 
       <section className="content-section">
         <div className="container">
-          <div className="roles-grid">
+          <div className="team-list">
             {roles.map((r) => (
-              <div className="role-card" key={r.title}>
-                <div className="role-header">
-                  <h3>{r.title}</h3>
-                  <div className="role-count">{r.count}</div>
-                </div>
+              <div className="team-row" key={r.title}>
+                <h3 className="team-row-title">{r.title}</h3>
+                <span className="role-count">
+                  {r.count === 1 ? '1 seat' : `${r.count} seats`}
+                </span>
                 <p>{r.text}</p>
               </div>
             ))}

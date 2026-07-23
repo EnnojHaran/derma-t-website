@@ -48,7 +48,6 @@ export default function Footer() {
                   Instagram
                 </a>
               </li>
-              <li><Link to="/contact">Contact Form</Link></li>
             </ul>
           </div>
 
